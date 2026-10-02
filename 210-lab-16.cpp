@@ -1,6 +1,6 @@
 // Keshav Yanamandra
 // COMSC-210-5293, Fall 2026
-// Lab 14 -- reusing the code from color struct lab 
+// Lab 16 -- reusing my lab 14 color class with constructors
 
 #include <iostream>
 #include <iomanip>
@@ -17,6 +17,34 @@ class Color {
         int blue;
 
     public:
+
+        // default constructor
+        Color() {
+            red = 0;
+            green = 0;
+            blue = 0;
+        }
+
+        // partial constructor. red only
+        Color(int r) {
+            red = r;
+            green = 0;
+            blue = 0;
+        }
+
+        // partial constructor. red and green
+        Color(int r, int g) {
+            red = r;
+            green = g;
+            blue = 0;
+        }
+
+        // parameter constructor with all three
+        Color(int r, int g, int b) {
+            red = r;
+            green = g;
+            blue = b;
+        }
         
         //setters
         void setRed(int r) {
