@@ -115,6 +115,14 @@ int main() {
     cout << "Color3 Red: " << color3.getRed() << endl;
     cout << "Color4 Red: " << color4.getRed() << endl;
 
+    
+    cout << endl << "Using setter functions after constructor call" << endl;
+
+    color1.setRed(101);
+    color1.setGreen(200);
+    color1.print();
+
+
     cout << endl;
 
 
