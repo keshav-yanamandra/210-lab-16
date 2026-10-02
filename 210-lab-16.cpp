@@ -83,27 +83,27 @@ class Color {
 
 int main() {
 
+    // default constructor
     Color color1;
 
-    color1.setRed(165);
-    color1.setGreen(0);
-    color1.setBlue(68);
+    // partial constructor - red only
+    Color color2(165);
 
-    Color color2;
-    color2.setRed(255);
-    color2.setGreen(100);
-    color2.setBlue(235);
+    // partial constructor - red and green
+    Color color3(34, 139);
 
-    Color color3;
-    color3.setRed(34);
-    color3.setGreen(139);
-    color3.setBlue(34);
+    // parameter constructor - all three
+    Color color4(255, 100, 235);
+
 
     color1.print();
     cout << endl;
     color2.print();
     cout << endl;
     color3.print();
+    cout << endl;
+    color4.print();
+    cout << endl;
 
 
     //using getters
@@ -113,6 +113,7 @@ int main() {
     cout << "Color1 Red: " << color1.getRed() << endl;
     cout << "Color2 Red: " << color2.getRed() << endl;
     cout << "Color3 Red: " << color3.getRed() << endl;
+    cout << "Color4 Red: " << color4.getRed() << endl;
 
     cout << endl;
 
